@@ -15,36 +15,6 @@
 
 <body>
     <header class='header'>
-        <!------------------------------- MENU -------------------------------->
-        <nav class='header__nav container center'>
-            <div class='header__nav-logo'>
-                <a href="/">
-                    Ian Rosas
-                </a>
-            </div>
-            <div class='header__nav-elements'>
-                <a href="/profile.html">Perfil</a>
-            </div>
-        </nav>
-        <!--END MENU-->
-
-        <!-- <div class="container center">
-            <div class="header__hero">
-                <div class="header__hero-img">
-                    <img src="/img/logos/html.png" alt="html logo">
-                </div>
-                <div class="header__hero-img">
-                    <img src="/img/logos/css.png" alt="css logo">
-                </div>
-                <div class="header__hero-img">
-                    <img src="/img/logos/js.png" alt="js logo">
-                </div>
-                <div class="header__hero-img">
-                    <img src="/img/logos/react.png" alt="reaect logo">
-                </div>
-            </div>
-        </div> -->
-
         <div class="container center header-content">
             <!------------------------------- pICTURE & TITLE -------------------------------->
             <div class="content">
@@ -60,7 +30,7 @@
             <!--COLUMN 1-->
             <div class="column1">
                 <div class='card'>
-                    <div class='card__container'>
+                    <div class='post__content'>
                         <h2>Perfil</h2>
                         <div calss='card__description'>
                             <p>30 años</p>
@@ -71,8 +41,8 @@
                     </div>
                 </div>
                 <div class='card'>
-                    <div class="card__container">
-                        <h4>Interest</h4>
+                    <div class="post__content">
+                        <h2>Intereses</h2>
                         <div class="card__interest">
                             <div class="interest">React</div>
                             <div class="interest">HTML</div>
@@ -126,6 +96,7 @@
                                             <li>Redux</li>
                                         </ul>
                                     </li>
+                                    <li>Control de versiones Git</li>
                                 </ul>
 
                             </div>
@@ -137,11 +108,6 @@
             <!--END COLUMN 1-->
             <!--COLUMN 2-->
             <div class='column2'>
-                <!-- <div class='card card__container post'>
-                    <div class='feel'>
-                        <p>Status: Coding in react, learning Node</p>
-                    </div>
-                </div> -->
                 <div class='card post__container post'>
                     <div class='posts'>
                         <div class="post__content">
@@ -177,15 +143,16 @@
                             <h3>StopWatch</h3>
                             <div classs='post__description'>
                                 <p>Una aplicación de temporizador y crónometro realizada en react usando redux</p>
-
-                                <p><a class='post__link' href="https://stopwatchene.netlify.app/" target="blank">Ver en
-                                        Línea</a></p>
-                                <p><a class='post__link' href="https://github.com/Iannacus/stopWatch" target="blank">Ver
-                                        Código en
-                                        GitHUb</a></p>
                             </div>
                             <div class="post__img">
                                 <img src="/img/projects/stopWatch.png" alt="stopwatch project with react redux">
+                            </div>
+                            <div class="buttons">
+                                <a class='post__link btn' href="https://stopwatchene.netlify.app/" target="blank">Ver en
+                                    Línea</a>
+                                <a class='post__link btn' href="https://github.com/Iannacus/stopWatch"
+                                    target="blank">Ver Código en
+                                    GitHUb</a>
                             </div>
                         </div>
                     </div>
@@ -209,15 +176,16 @@
                             <div classs='post__description'>
                                 <p>Cree una pokedex usando la información brindada por la pokeapi.</p>
                                 <p>En este proyecto hice uso de context y react-router</p>
-
-                                <p><a class='post__link' href="https://pokedexene.netlify.app/" target="blank">Ver en
-                                        Línea</a></p>
-                                <p><a class='post__link' href="https://github.com/Iannacus/pokedex" target="blank">Ver
-                                        Código en
-                                        GitHUb</a></p>
                             </div>
                             <div class="post__img">
                                 <img src="/img/projects/pokedex.png" alt="pokedex img">
+                            </div>
+                            <div class="buttons">
+                                <a class='post__link btn' href="https://pokedexene.netlify.app/" target="blank">Ver en
+                                    Línea</a>
+                                <a class='post__link btn' href="https://github.com/Iannacus/pokedex" target="blank">Ver
+                                    Código en
+                                    GitHUb</a>
                             </div>
                         </div>
                     </div>
@@ -240,15 +208,16 @@
                             <h3>ToDo List</h3>
                             <div classs='post__description'>
                                 <p>Aplicación CRUD consumienedo una api y usando los métodos GET, POST, PUT y DELETE</p>
-
-                                <p><a class='post__link' href="https://pokedexene.netlify.app/" target="blank">Ver en
-                                        Línea</a></p>
-                                <p><a class='post__link' href="https://github.com/Iannacus/todolist" target="blank">Ver
-                                        Código en
-                                        GitHUb</a></p>
                             </div>
                             <div class="post__img">
                                 <img src="/img/projects/todolist.png" alt="pokedex img">
+                            </div>
+                            <div class="buttons">
+                                <a class='post__link btn' href="https://pokedexene.netlify.app/" target="blank">Ver en
+                                    Línea</a>
+                                <a class='post__link btn' href="https://github.com/Iannacus/todolist" target="blank">Ver
+                                    Código en
+                                    GitHUb</a>
                             </div>
                         </div>
                     </div>
@@ -274,16 +243,18 @@
                                 <p>Cree la interfaz y la lógica requerida para buscar una localización y obtener la url
                                     para realizar la petición correcta y obtener los datos para ser mostrados.
                                 </p>
-
-                                <p><a class='post__link' href="https://iaenerickandmorty.netlify.app/"
-                                        target="blank">Ver en
-                                        Línea</a></p>
-                                <p><a class='post__link' href="https://github.com/Iannacus/ram" target="blank">Ver
-                                        Código en
-                                        GitHUb</a></p>
                             </div>
                             <div class="post__img">
                                 <img src="/img/projects/ram.png" alt="rick and morty app img">
+                            </div>
+                            <div class="buttons">
+                                <a class='post__link btn' href="https://iaenerickandmorty.netlify.app/"
+                                    target="blank">Ver
+                                    en
+                                    Línea</a>
+                                <a class='post__link btn' href="https://github.com/Iannacus/ram" target="blank">Ver
+                                    Código en
+                                    GitHUb</a>
                             </div>
                         </div>
                     </div>
@@ -309,17 +280,18 @@
                                     navegador </p>
                                 <p>El fondo de pantalla cambia de color dependiendo del estado del clima actual
                                 </p>
-
-                                <p><a class='post__link' href="https://iaeneweatherapp.netlify.app/" target="blank">Ver
-                                        en
-                                        Línea</a></p>
-                                <p><a class='post__link' href="https://github.com/Iannacus/weatherApp"
-                                        target="blank">Ver
-                                        Código en
-                                        GitHUb</a></p>
                             </div>
                             <div class="post__img">
                                 <img src="/img/projects/weathehrapp.png" alt="rick and morty app img">
+                            </div>
+                            <div class="buttons">
+                                <a class='post__link btn' href="https://iaeneweatherapp.netlify.app/" target="blank">Ver
+                                    en
+                                    Línea</a>
+                                <a class='post__link btn' href="https://github.com/Iannacus/weatherApp"
+                                    target="blank">Ver
+                                    Código en
+                                    GitHUb</a>
                             </div>
                         </div>
                     </div>
@@ -346,13 +318,15 @@
                                 </p>
                                 <p>Puedes seleccionar la cantidad de preguntas, el tema, la dificultad entre otras
                                     caracteristicas más. </p>
-                                <p><a class='post__link' href="https://triviappi.netlify.app/" target="blank">Ver en
-                                        línea</a></p>
-                                <p><a class='post__link' href="https://github.com/Iannacus/trivia">Ver código en
-                                        GitHub</a></p>
                             </div>
                             <div class="post__img">
                                 <img src="/img/projects/triviapp.png" alt="stopwatch project with react redux">
+                            </div>
+                            <div class="buttons">
+                                <a class='post__link btn' href="https://triviappi.netlify.app/" target="blank">Ver en
+                                    línea</a>
+                                <a class='post__link btn' href="https://github.com/Iannacus/trivia">Ver código en
+                                    GitHub</a>
                             </div>
                         </div>
                     </div>
